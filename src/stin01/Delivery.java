@@ -1,14 +1,18 @@
 
 package stin01;
 
-public abstract class Delivery {
+public class Delivery {
     protected String TrackingNumber;
     public double weight;
+    private ShippingMethod ShippingMethod;
     
-    public Delivery(String number, double weight){
+    public Delivery(String number, double weight, ShippingMethod shippingMethod){
         this.TrackingNumber = number;
         this.weight = weight;
+        this.ShippingMethod = shippingMethod;
     }
     
-    public abstract double calculatePrice();
+    public double calculatePrice() {
+        return ShippingMethod.calculateCost(weight);
+    }
 }
