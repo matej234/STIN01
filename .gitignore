@@ -1,0 +1,18 @@
+# ==== Build output ====
+/build/
+/dist/
+/nbbuild/
+/nbdist/
+
+# ==== NetBeans private nastavení (uživatelské věci) ====
+/nbproject/private/
+
+# ==== Compiled files ====
+*.class
+
+# ==== Logs ====
+*.log
+
+# ==== OS bordel ====
+.DS_Store
+Thumbs.db
